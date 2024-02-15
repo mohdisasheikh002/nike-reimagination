@@ -1,0 +1,304 @@
+@font-face {
+  font-family: nikeTg;
+  src: url("../fonts/Nike-TG.otf");
+}
+
+@font-face {
+  font-family: nikeFutura;
+  src: url("../fonts/Nike-Futura.otf");
+}
+
+@font-face {
+  font-family: neueLight;
+  src: url("../fonts/NeueMontreal-Light.otf");
+}
+
+@font-face {
+  font-family: neueRegular;
+  src: url("../fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+  font-family: neueMedium;
+  src: url("../fonts/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+  font-family: neueBold;
+  src: url("../fonts/NeueMontreal-Bold.otf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+.fs1 {
+  font-size: 3.5vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs2 {
+  font-size: 3vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs3 {
+  font-size: 2.5vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs4 {
+  font-size: 2vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs5 {
+  font-size: 1vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+.fs6 {
+  font-size: 0.8vmax;
+  font-family: neueRegular;
+  color: #fff;
+  letter-spacing: 0.05vmax;
+}
+
+i {
+  font-size: 1.2vmax;
+  font-family: neueRegular;
+  color: #000;
+  letter-spacing: 0.05vmax;
+}
+
+button {
+  font-size: 1vmax;
+  font-family: gilroyMedium;
+  border-radius: 5vmax;
+  border: none;
+  color: #fefefe;
+  background-color: #cfa078;
+  padding: 0.8vmax 1.8vmax;
+  cursor: pointer;
+}
+
+@media (max-width: 30cm) {
+  .fs1 {
+    font-size: 7vmax;
+  }
+
+  .fs3 {
+    font-size: 5vmax;
+  }
+
+  .fs4 {
+    font-size: 4vmax;
+  }
+
+  .fs5 {
+    font-size: 3vmax;
+  }
+
+  .fs6 {
+    font-size: 2.6vmax;
+  }
+
+  button {
+    font-size: 1.5vmax;
+    padding: 1.4vmax 2.8vmax;
+  }
+}
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  height: 4vmax;
+  width: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0vmax 3.5vmax;
+
+  .logo {
+    height: 3.5vmax;
+  }
+
+  .navcntr {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.5vmax;
+
+    a {
+      font-family: neueMedium;
+      text-decoration: none;
+      color: #000;
+    }
+  }
+
+  .navrgt {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2vmax;
+
+    .searchbox {
+      background-color: transparent;
+      border: 1px solid white;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 5vmax;
+      padding: 0px 10px;
+    }
+  }
+}
+
+.wrapper {
+  height: fit-content;
+  width: 100%;
+
+  .sec1 {
+    height: 100vh;
+    width: 100%;
+    padding: 3.5vmax 3.5vmax;
+
+    .offerbox {
+      height: 3.5vmax;
+      width: 100%;
+      background-color: #fff;
+      display: flex;
+    }
+
+    .nike-content {
+      position: relative;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #184087;
+      background-image: linear-gradient(
+        to right,
+        #153b7b,
+        #0d2754,
+        #041433,
+        #041535,
+        #041535
+      );
+      overflow: hidden;
+
+      img {
+        height: 46vmax;
+        transform: rotate(22deg);
+        margin-top: 2vmax;
+        margin-left: 3vmax;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.714));
+        filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
+        z-index: 88;
+      }
+
+      .textbox1 {
+        position: absolute;
+        top: 51%;
+        left: 11%;
+        transform: translate(0%, -50%);
+
+        h1 {
+          font-size: 18vmax;
+          font-family: nikeFutura;
+          font-style: italic;
+          letter-spacing: 0.5vmax;
+          line-height: 16vmax;
+          color: white;
+          border: none;
+
+          &:nth-child(1) {
+            margin-left: 0.1vmax;
+          }
+        }
+
+        .logo {
+          height: 500px;
+          position: absolute;
+          top: 20%;
+          left: 55%;
+          transform: translate(-50%, -50%);
+        }
+      }
+
+      .textbox2 {
+        position: absolute;
+        top: 20%;
+        left: 70%;
+        transform: translate(-50%, -50%);
+        width: 25%;
+        text-align: center;
+        line-height: 50px;
+        transform: rotate(-20deg);
+
+        h1 {
+          font-size: 5vmax;
+          font-family: nikeFutura;
+          color: transparent;
+          -webkit-text-stroke: 1px #fff;
+
+          &:nth-child(1) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 6vmax;
+            font-family: nikeFutura;
+            color: white;
+          }
+        }
+      }
+
+      h5 {
+        position: absolute;
+        right: -11.5%;
+        top: 60%;
+        transform: translate(-50%, 0%);
+        font-size: 25px;
+        color: white;
+        font-family: "gilroy";
+        font-weight: 400;
+        transform: rotate(-90deg);
+        letter-spacing: 3px;
+        text-transform: uppercase;
+
+        span {
+          border-top: 2px solid white;
+        }
+      }
+    }
+  }
+}
