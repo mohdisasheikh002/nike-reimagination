@@ -128,7 +128,7 @@ button {
   justify-content: space-between;
   padding: 0vmax 3.5vmax;
 }
-.nav .logo {
+.nav img {
   height: 3.5vmax;
 }
 .nav .navcntr {
@@ -176,13 +176,7 @@ button {
   width: 100%;
   padding: 3.5vmax 3.5vmax;
 }
-.wrapper .sec1 .offerbox {
-  height: 3.5vmax;
-  width: 100%;
-  background-color: #fff;
-  display: flex;
-}
-.wrapper .sec1 .nike-content {
+.wrapper .sec1 .jordan-contentbox {
   position: relative;
   height: 100%;
   width: 100%;
@@ -193,7 +187,7 @@ button {
   background-image: linear-gradient(to right, #153b7b, #0d2754, #041433, #041535, #041535);
   overflow: hidden;
 }
-.wrapper .sec1 .nike-content img {
+.wrapper .sec1 .jordan-contentbox img {
   height: 46vmax;
   transform: rotate(22deg);
   margin-top: 2vmax;
@@ -201,13 +195,13 @@ button {
   filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
   z-index: 88;
 }
-.wrapper .sec1 .nike-content .textbox1 {
+.wrapper .sec1 .jordan-contentbox .textbox1 {
   position: absolute;
   top: 51%;
   left: 11%;
   transform: translate(0%, -50%);
 }
-.wrapper .sec1 .nike-content .textbox1 h1 {
+.wrapper .sec1 .jordan-contentbox .textbox1 h1 {
   font-size: 18vmax;
   font-family: nikeFutura;
   font-style: italic;
@@ -216,17 +210,17 @@ button {
   color: white;
   border: none;
 }
-.wrapper .sec1 .nike-content .textbox1 h1:nth-child(1) {
+.wrapper .sec1 .jordan-contentbox .textbox1 h1:nth-child(1) {
   margin-left: 0.1vmax;
 }
-.wrapper .sec1 .nike-content .textbox1 .logo {
+.wrapper .sec1 .jordan-contentbox .textbox1 .logo {
   height: 500px;
   position: absolute;
   top: 20%;
   left: 55%;
   transform: translate(-50%, -50%);
 }
-.wrapper .sec1 .nike-content .textbox2 {
+.wrapper .sec1 .jordan-contentbox .textbox2 {
   position: absolute;
   top: 20%;
   left: 70%;
@@ -236,13 +230,13 @@ button {
   line-height: 50px;
   transform: rotate(-20deg);
 }
-.wrapper .sec1 .nike-content .textbox2 h1 {
+.wrapper .sec1 .jordan-contentbox .textbox2 h1 {
   font-size: 5vmax;
   font-family: nikeFutura;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
-.wrapper .sec1 .nike-content .textbox2 h1:nth-child(1) {
+.wrapper .sec1 .jordan-contentbox .textbox2 h1:nth-child(1) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -251,7 +245,7 @@ button {
   font-family: nikeFutura;
   color: white;
 }
-.wrapper .sec1 .nike-content h5 {
+.wrapper .sec1 .jordan-contentbox h5 {
   position: absolute;
   right: -11.5%;
   top: 60%;
@@ -264,6 +258,37 @@ button {
   letter-spacing: 3px;
   text-transform: uppercase;
 }
-.wrapper .sec1 .nike-content h5 span {
+.wrapper .sec1 .jordan-contentbox h5 span {
   border-top: 2px solid white;
+}
+.wrapper .sec1 .jordan-linkbox {
+  height: 3.5vmax;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .sec1 .jordan-linkbox img {
+  height: 1.5vmax;
+}
+.wrapper .sec1 .jordan-linkbox .links {
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.wrapper .sec1 .jordan-linkbox .links a {
+  letter-spacing: 0.04vmax;
+  font-family: neueMedium;
+  text-decoration: none;
+  border-left: 2px solid #000;
+  padding: 0 1vmax;
+  color: #000;
+}
+.wrapper .sec1 .jordan-linkbox .links a:nth-child(1) {
+  border-left: none;
+}
+.wrapper .sec1 .jordan-linkbox .links a:nth-last-child(1) {
+  padding-right: 0;
 }/*# sourceMappingURL=style.css.map */

@@ -140,7 +140,7 @@ button {
   justify-content: space-between;
   padding: 0vmax 3.5vmax;
 
-  .logo {
+  img {
     height: 3.5vmax;
   }
 
@@ -190,14 +190,7 @@ button {
     width: 100%;
     padding: 3.5vmax 3.5vmax;
 
-    .offerbox {
-      height: 3.5vmax;
-      width: 100%;
-      background-color: #fff;
-      display: flex;
-    }
-
-    .nike-content {
+    .jordan-contentbox {
       position: relative;
       height: 100%;
       width: 100%;
@@ -300,5 +293,43 @@ button {
         }
       }
     }
+
+    .jordan-linkbox {
+      height: 3.5vmax;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      img {
+        height: 1.5vmax;
+      }
+
+      .links {
+        height: 100%;
+        width: fit-content;
+        display: flex;
+        align-items: center;
+
+        a {
+          letter-spacing: 0.04vmax;
+          font-family: neueMedium;
+          text-decoration: none;
+          border-left: 2px solid #000;
+          padding: 0 1vmax;
+          color: #000;
+
+          &:nth-child(1) {
+            border-left: none;
+          }
+
+          &:nth-last-child(1) {
+            padding-right: 0;
+          }
+        }
+      }
+    }
   }
+
+  @media()
 }
