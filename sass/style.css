@@ -35,83 +35,87 @@ body {
 }
 
 .fs1 {
-  font-size: 3.5vmax;
-  font-family: neueRegular;
-  color: #fff;
+  font-size: 5vmax;
+  line-height: 4.5vmax;
+  font-family: nikeFutura;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 .fs2 {
-  font-size: 3vmax;
+  font-size: 4vmax;
   font-family: neueRegular;
-  color: #fff;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 .fs3 {
-  font-size: 2.5vmax;
+  font-size: 2vmax;
   font-family: neueRegular;
-  color: #fff;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 .fs4 {
-  font-size: 2vmax;
+  font-size: 1.2vmax;
   font-family: neueRegular;
-  color: #fff;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 .fs5 {
   font-size: 1vmax;
   font-family: neueRegular;
-  color: #fff;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 .fs6 {
   font-size: 0.8vmax;
   font-family: neueRegular;
-  color: #fff;
+  color: #111;
   letter-spacing: 0.05vmax;
 }
 
 i {
   font-size: 1.2vmax;
-  font-family: neueRegular;
-  color: #000;
-  letter-spacing: 0.05vmax;
+  color: #111;
 }
 
 button {
   font-size: 1vmax;
-  font-family: gilroyMedium;
+  font-family: neueRegular;
+  letter-spacing: 0.05vmax;
   border-radius: 5vmax;
   border: none;
-  color: #fefefe;
-  background-color: #cfa078;
+  color: #fff;
+  background-color: #111;
   padding: 0.8vmax 1.8vmax;
   cursor: pointer;
 }
 
 @media (max-width: 30cm) {
   .fs1 {
-    font-size: 7vmax;
+    font-size: 5.5vmax;
+    line-height: 5vmax;
   }
   .fs3 {
-    font-size: 5vmax;
+    font-size: 2.5vmax;
   }
-  .fs4 {
-    font-size: 4vmax;
-  }
+  .fs4,
   .fs5 {
-    font-size: 3vmax;
+    font-size: 2vmax;
   }
   .fs6 {
-    font-size: 2.6vmax;
+    font-size: 1.4vmax;
+  }
+  i {
+    font-size: 2.5vmax;
+    color: #111;
   }
   button {
-    font-size: 1.5vmax;
+    font-size: 2vmax;
+    letter-spacing: 0.1vmax;
     padding: 1.4vmax 2.8vmax;
   }
 }
@@ -126,10 +130,10 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0vmax 3.5vmax;
+  padding: 0vmax 3vmax;
 }
 .nav img {
-  height: 3.5vmax;
+  height: 3vmax;
 }
 .nav .navcntr {
   position: absolute;
@@ -148,7 +152,7 @@ button {
 .nav .navcntr a {
   font-family: neueMedium;
   text-decoration: none;
-  color: #000;
+  color: #111;
 }
 .nav .navrgt {
   display: flex;
@@ -156,30 +160,78 @@ button {
   justify-content: space-between;
   gap: 2vmax;
 }
-.nav .navrgt .searchbox {
-  background-color: transparent;
-  border: 1px solid white;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 5vmax;
-  padding: 0px 10px;
+.nav .navrgt .ri-menu-line {
+  display: none;
 }
 
+@media (max-width: 30cm) {
+  .nav {
+    height: 6vmax;
+    padding: 0 2vmax;
+  }
+  .nav img {
+    height: 5vmax;
+  }
+  .nav .navcntr {
+    display: none;
+  }
+  .nav .navrgt {
+    gap: 2.5vmax;
+  }
+  .nav .navrgt .ri-menu-line {
+    display: initial;
+  }
+}
 .wrapper {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
 }
 .wrapper .sec1 {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  padding: 3.5vmax 3.5vmax;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 4vmax;
 }
-.wrapper .sec1 .jordan-contentbox {
-  position: relative;
-  height: 100%;
+.wrapper .sec1 .elem1 {
+  height: 3vmax;
   width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3vmax;
+  background-color: #f5f5f5;
+}
+.wrapper .sec1 .elem1 img {
+  height: 1.5vmax;
+}
+.wrapper .sec1 .elem1 .links {
+  height: 100%;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+}
+.wrapper .sec1 .elem1 .links a {
+  letter-spacing: 0.04vmax;
+  font-family: neueMedium;
+  text-decoration: none;
+  border-left: 2px solid #111;
+  padding: 0 1vmax;
+  color: #111;
+}
+.wrapper .sec1 .elem1 .links a:nth-child(1) {
+  border-left: none;
+}
+.wrapper .sec1 .elem1 .links a:nth-last-child(1) {
+  padding-right: 0;
+}
+.wrapper .sec1 .elem2 {
+  position: relative;
+  height: calc(100vh - 7vmax);
+  width: 94%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -187,7 +239,7 @@ button {
   background-image: linear-gradient(to right, #153b7b, #0d2754, #041433, #041535, #041535);
   overflow: hidden;
 }
-.wrapper .sec1 .jordan-contentbox img {
+.wrapper .sec1 .elem2 img {
   height: 46vmax;
   transform: rotate(22deg);
   margin-top: 2vmax;
@@ -195,13 +247,13 @@ button {
   filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
   z-index: 88;
 }
-.wrapper .sec1 .jordan-contentbox .textbox1 {
+.wrapper .sec1 .elem2 .textbox1 {
   position: absolute;
   top: 51%;
   left: 11%;
   transform: translate(0%, -50%);
 }
-.wrapper .sec1 .jordan-contentbox .textbox1 h1 {
+.wrapper .sec1 .elem2 .textbox1 h1 {
   font-size: 18vmax;
   font-family: nikeFutura;
   font-style: italic;
@@ -210,33 +262,25 @@ button {
   color: white;
   border: none;
 }
-.wrapper .sec1 .jordan-contentbox .textbox1 h1:nth-child(1) {
+.wrapper .sec1 .elem2 .textbox1 h1:nth-child(1) {
   margin-left: 0.1vmax;
 }
-.wrapper .sec1 .jordan-contentbox .textbox1 .logo {
-  height: 500px;
+.wrapper .sec1 .elem2 .textbox2 {
   position: absolute;
-  top: 20%;
-  left: 55%;
-  transform: translate(-50%, -50%);
-}
-.wrapper .sec1 .jordan-contentbox .textbox2 {
-  position: absolute;
-  top: 20%;
+  top: 16%;
   left: 70%;
-  transform: translate(-50%, -50%);
   width: 25%;
   text-align: center;
-  line-height: 50px;
   transform: rotate(-20deg);
 }
-.wrapper .sec1 .jordan-contentbox .textbox2 h1 {
+.wrapper .sec1 .elem2 .textbox2 h1 {
   font-size: 5vmax;
+  line-height: 3vmax;
   font-family: nikeFutura;
   color: transparent;
   -webkit-text-stroke: 1px #fff;
 }
-.wrapper .sec1 .jordan-contentbox .textbox2 h1:nth-child(1) {
+.wrapper .sec1 .elem2 .textbox2 h1:nth-child(1) {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -245,50 +289,263 @@ button {
   font-family: nikeFutura;
   color: white;
 }
-.wrapper .sec1 .jordan-contentbox h5 {
-  position: absolute;
-  right: -11.5%;
-  top: 60%;
-  transform: translate(-50%, 0%);
-  font-size: 25px;
-  color: white;
-  font-family: "gilroy";
-  font-weight: 400;
-  transform: rotate(-90deg);
-  letter-spacing: 3px;
+.wrapper .sec1 .elem3 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+  text-align: center;
+}
+.wrapper .sec1 .elem3 h1 {
+  margin-top: 1vmax;
   text-transform: uppercase;
 }
-.wrapper .sec1 .jordan-contentbox h5 span {
-  border-top: 2px solid white;
+.wrapper .sec1 .elem3 .lspara {
+  line-height: 1.5vmax;
+  margin-top: 1.5vmax;
 }
-.wrapper .sec1 .jordan-linkbox {
-  height: 3.5vmax;
+.wrapper .sec1 .elem3 .ptpara {
+  display: none;
+}
+.wrapper .sec1 .elem3 .btnbox {
+  height: -moz-fit-content;
+  height: fit-content;
   width: 100%;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 0.5vmax;
+  margin-top: 2vmax;
 }
-.wrapper .sec1 .jordan-linkbox img {
-  height: 1.5vmax;
+.wrapper .sec1 .elem3 .btnbox .button {
+  display: inline-block;
 }
-.wrapper .sec1 .jordan-linkbox .links {
-  height: 100%;
-  width: -moz-fit-content;
-  width: fit-content;
+@media (max-width: 30cm) {
+  .wrapper .sec1 {
+    padding-top: 6vmax;
+  }
+  .wrapper .sec1 .elem1 {
+    height: 5vmax;
+    padding: 0 2.3vmax;
+  }
+  .wrapper .sec1 .elem1 img {
+    height: 2.5vmax;
+  }
+  .wrapper .sec1 .elem1 .links a {
+    padding: 0 1vmax;
+  }
+  .wrapper .sec1 .elem2 {
+    height: 54.5vmax;
+    width: 93%;
+    width: calc(100% - 4.6vmax);
+  }
+  .wrapper .sec1 .elem2 img {
+    height: 42vmax;
+    margin-top: 0;
+    margin-left: 6vmax;
+  }
+  .wrapper .sec1 .elem2 .textbox1 {
+    left: 7%;
+  }
+  .wrapper .sec1 .elem2 .textbox1 h1 {
+    font-size: 15vmax;
+    line-height: 14vmax;
+  }
+  .wrapper .sec1 .elem2 .textbox2 {
+    top: 13%;
+    left: 73%;
+    width: 25%;
+  }
+  .wrapper .sec1 .elem2 .textbox2 h1 {
+    font-size: 4vmax;
+    line-height: 2.5vmax;
+  }
+  .wrapper .sec1 .elem2 .textbox2 h1:nth-child(1) {
+    font-size: 5vmax;
+  }
+  .wrapper .sec1 .elem3 {
+    padding: 2.3vmax;
+    padding-bottom: 4.6vmax;
+  }
+  .wrapper .sec1 .elem3 .lspara {
+    line-height: 3vmax;
+    margin-top: 2vmax;
+  }
+  .wrapper .sec1 .elem3 .btnbox {
+    gap: 1vmax;
+    margin-top: 3vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec1 {
+    padding-top: 6vmax;
+  }
+  .wrapper .sec1 .elem2 {
+    height: 41.3vmax;
+  }
+  .wrapper .sec1 .elem2 img {
+    height: 40vmax;
+    margin-left: 4vmax;
+  }
+  .wrapper .sec1 .elem2 .textbox1 {
+    display: none;
+  }
+  .wrapper .sec1 .elem2 .textbox2 {
+    display: none;
+  }
+  .wrapper .sec1 .elem3 {
+    text-align: left;
+  }
+  .wrapper .sec1 .elem3 h5 {
+    margin-left: 0.4vmax;
+  }
+  .wrapper .sec1 .elem3 .lspara {
+    display: none;
+  }
+  .wrapper .sec1 .elem3 .ptpara {
+    display: flex;
+    line-height: 3vmax;
+    margin-top: 2.5vmax;
+  }
+  .wrapper .sec1 .elem3 .btnbox {
+    width: -moz-fit-content;
+    width: fit-content;
+    flex-direction: column;
+    justify-content: left;
+    margin-top: 3.5vmax;
+  }
+}
+.wrapper .sec2 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+}
+.wrapper .sec2 .slider {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
   display: flex;
-  align-items: center;
+  gap: 0.8vmax;
+  margin-top: 3vmax;
 }
-.wrapper .sec1 .jordan-linkbox .links a {
-  letter-spacing: 0.04vmax;
-  font-family: neueMedium;
-  text-decoration: none;
-  border-left: 2px solid #000;
-  padding: 0 1vmax;
-  color: #000;
+.wrapper .sec2 .slider::-webkit-scrollbar {
+  display: none;
 }
-.wrapper .sec1 .jordan-linkbox .links a:nth-child(1) {
-  border-left: none;
+.wrapper .sec2 .slider .imgbox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 33.3333333333%;
 }
-.wrapper .sec1 .jordan-linkbox .links a:nth-last-child(1) {
-  padding-right: 0;
+.wrapper .sec2 .slider .imgbox img {
+  height: 40vmax;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+}
+.wrapper .sec2 .slider .imgbox h4 {
+  margin-top: 3vmax;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec2 {
+    padding: 4.6vmax 2.3vmax;
+  }
+  .wrapper .sec2 .slider {
+    gap: 1.2vmax;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .wrapper .sec2 .slider .imgbox {
+    flex-shrink: 0;
+    width: 76.9230769231%;
+  }
+  .wrapper .sec2 .slider .imgbox img {
+    height: 50vmax;
+  }
+  .wrapper .sec2 .slider .imgbox h4 {
+    margin-top: 2.3vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec2 .slider .imgbox {
+    width: 83.3333333333%;
+  }
+}
+.wrapper .sec3 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+}
+.wrapper .sec3 .elem1 {
+  height: 50vmax;
+  width: 100%;
+  margin-top: 3vmax;
+}
+.wrapper .sec3 .elem1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: top;
+     object-position: top;
+}
+.wrapper .sec3 .elem2 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+  padding-bottom: 0;
+  text-align: center;
+}
+.wrapper .sec3 .elem2 h1 {
+  margin-top: 1vmax;
+  text-transform: uppercase;
+}
+.wrapper .sec3 .elem2 p {
+  line-height: 1.5vmax;
+  margin-top: 1.5vmax;
+}
+.wrapper .sec3 .elem2 .button {
+  margin-top: 2vmax;
+  display: inline-block;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec3 {
+    padding: 4.6vmax 2.3vmax;
+  }
+  .wrapper .sec3 .elem2 {
+    padding: 2.3vmax;
+    padding-bottom: 0;
+  }
+  .wrapper .sec3 .elem2 h1 {
+    padding: 0 4vmax;
+  }
+  .wrapper .sec3 .elem2 p {
+    line-height: 3vmax;
+    margin-top: 2vmax;
+    padding: 0 12vmax;
+  }
+  .wrapper .sec3 .elem2 .button {
+    margin-top: 3vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec3 .elem2 {
+    padding: 2.3vmax 0;
+    padding-bottom: 0;
+    text-align: left;
+  }
+  .wrapper .sec3 .elem2 h1 {
+    padding: 0;
+  }
+  .wrapper .sec3 .elem2 h5 {
+    margin-left: 0.4vmax;
+  }
+  .wrapper .sec3 .elem2 p {
+    line-height: 3vmax;
+    margin-top: 2.5vmax;
+    padding: 0;
+  }
 }/*# sourceMappingURL=style.css.map */
