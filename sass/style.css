@@ -97,7 +97,7 @@ button {
 @media (max-width: 30cm) {
   .fs1 {
     font-size: 5.5vmax;
-    line-height: 5vmax;
+    line-height: 5.5vmax;
   }
   .fs3 {
     font-size: 2.5vmax;
@@ -471,6 +471,10 @@ button {
   .wrapper .sec2 .slider .imgbox {
     width: 83.3333333333%;
   }
+  .wrapper .sec2 .slider .imgbox:nth-child(2) img {
+    -o-object-position: -5vmax center;
+       object-position: -5vmax center;
+  }
 }
 .wrapper .sec3 {
   height: -moz-fit-content;
@@ -495,8 +499,7 @@ button {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
-  padding: 3vmax;
-  padding-bottom: 0;
+  margin-top: 3vmax;
   text-align: center;
 }
 .wrapper .sec3 .elem2 h1 {
@@ -516,16 +519,15 @@ button {
     padding: 4.6vmax 2.3vmax;
   }
   .wrapper .sec3 .elem2 {
-    padding: 2.3vmax;
-    padding-bottom: 0;
+    margin-top: 2.3vmax;
   }
   .wrapper .sec3 .elem2 h1 {
-    padding: 0 4vmax;
+    padding: 0 12vmax;
   }
   .wrapper .sec3 .elem2 p {
     line-height: 3vmax;
     margin-top: 2vmax;
-    padding: 0 12vmax;
+    padding: 0 15vmax;
   }
   .wrapper .sec3 .elem2 .button {
     margin-top: 3vmax;
@@ -533,12 +535,11 @@ button {
 }
 @media (max-width: 15cm) {
   .wrapper .sec3 .elem2 {
-    padding: 2.3vmax 0;
-    padding-bottom: 0;
     text-align: left;
   }
   .wrapper .sec3 .elem2 h1 {
     padding: 0;
+    padding-right: 5vmax;
   }
   .wrapper .sec3 .elem2 h5 {
     margin-left: 0.4vmax;
@@ -547,5 +548,150 @@ button {
     line-height: 3vmax;
     margin-top: 2.5vmax;
     padding: 0;
+    padding-right: 10vmax;
+  }
+  .wrapper .sec3 .elem2 .button {
+    margin-top: 3.5vmax;
+  }
+}
+.wrapper .sec4 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+}
+.wrapper .sec4 .slider {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  display: flex;
+  gap: 0.8vmax;
+  margin-top: 3vmax;
+}
+.wrapper .sec4 .slider::-webkit-scrollbar {
+  display: none;
+}
+.wrapper .sec4 .slider .imgbox {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 33.3333333333%;
+}
+.wrapper .sec4 .slider .imgbox img {
+  height: 20vmax;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center -7vmax;
+     object-position: center -7vmax;
+}
+.wrapper .sec4 .slider .imgbox h4 {
+  margin-top: 3vmax;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec4 {
+    padding: 4.6vmax 2.3vmax;
+  }
+  .wrapper .sec4 .slider {
+    gap: 1.2vmax;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .wrapper .sec4 .slider .imgbox {
+    flex-shrink: 0;
+    width: 76.9230769231%;
+  }
+  .wrapper .sec4 .slider .imgbox img {
+    height: 40vmax;
+    -o-object-position: center -7vmax;
+       object-position: center -7vmax;
+  }
+  .wrapper .sec4 .slider .imgbox h4 {
+    margin-top: 2.3vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec4 .slider .imgbox {
+    width: 83.3333333333%;
+  }
+  .wrapper .sec4 .slider .imgbox img {
+    height: 25vmax;
+  }
+}
+.wrapper .sec5 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  padding: 3vmax;
+}
+.wrapper .sec5 .elem1 {
+  height: 50vmax;
+  width: 100%;
+  margin-top: 3vmax;
+  background: #fcfcfc;
+}
+.wrapper .sec5 .elem1 img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  -o-object-position: center 0.5vmax;
+     object-position: center 0.5vmax;
+}
+.wrapper .sec5 .elem2 {
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+  margin-top: 3vmax;
+  text-align: center;
+}
+.wrapper .sec5 .elem2 h1 {
+  margin-top: 1vmax;
+  text-transform: uppercase;
+}
+.wrapper .sec5 .elem2 p {
+  line-height: 1.5vmax;
+  margin-top: 1.5vmax;
+}
+.wrapper .sec5 .elem2 .button {
+  margin-top: 2vmax;
+  display: inline-block;
+}
+@media (max-width: 30cm) {
+  .wrapper .sec5 {
+    padding: 4.6vmax 2.3vmax;
+  }
+  .wrapper .sec5 .elem2 {
+    margin-top: 2.3vmax;
+  }
+  .wrapper .sec5 .elem2 h1 {
+    padding: 0;
+  }
+  .wrapper .sec5 .elem2 p {
+    line-height: 3vmax;
+    margin-top: 2vmax;
+    padding: 0 15vmax;
+  }
+  .wrapper .sec5 .elem2 .button {
+    margin-top: 3vmax;
+  }
+}
+@media (max-width: 15cm) {
+  .wrapper .sec5 .elem2 {
+    text-align: left;
+  }
+  .wrapper .sec5 .elem2 h1 {
+    padding: 0;
+  }
+  .wrapper .sec5 .elem2 h5 {
+    margin-left: 0.4vmax;
+  }
+  .wrapper .sec5 .elem2 p {
+    line-height: 3vmax;
+    margin-top: 2.5vmax;
+    padding: 0;
+    padding-right: 10vmax;
+  }
+  .wrapper .sec5 .elem2 .button {
+    margin-top: 3.5vmax;
   }
 }/*# sourceMappingURL=style.css.map */
