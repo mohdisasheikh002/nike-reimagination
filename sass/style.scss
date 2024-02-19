@@ -254,9 +254,6 @@ button {
       position: relative;
       height: calc(100vh - 7vmax);
       width: 94%;
-      display: flex;
-      align-items: center;
-      justify-content: center;
       background-color: #184087;
       background-image: linear-gradient(
         to right,
@@ -268,26 +265,15 @@ button {
       );
       overflow: hidden;
 
-      img {
-        height: 46vmax;
-        transform: rotate(22deg);
-        margin-top: 2vmax;
-        margin-left: 3vmax;
-        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.714));
-        filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
-        z-index: 88;
-      }
-
       .textbox1 {
         position: absolute;
-        top: 51%;
-        left: 11%;
-        transform: translate(0%, -50%);
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         h1 {
           font-size: 18vmax;
           font-family: nikeFutura;
-          font-style: italic;
           letter-spacing: 0.5vmax;
           line-height: 16vmax;
           color: white;
@@ -299,31 +285,23 @@ button {
         }
       }
 
-      .textbox2 {
+      .nikelogo2 {
+        height: 33vmax;
         position: absolute;
-        top: 16%;
-        left: 70%;
-        width: 25%;
-        text-align: center;
-        transform: rotate(-20deg);
+        top: 32%;
+        left: 63%;
+        transform: translate(-50%, -50%);
+      }
 
-        h1 {
-          font-size: 5vmax;
-          line-height: 3vmax;
-          font-family: nikeFutura;
-          color: transparent;
-          -webkit-text-stroke: 1px #fff;
-
-          &:nth-child(1) {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 6vmax;
-            font-family: nikeFutura;
-            color: white;
-          }
-        }
+      .jordanshoe {
+        position: absolute;
+        top: 50%;
+        left: 56.8%;
+        transform: translate(-50%, -50%) rotate(25deg);
+        height: 46vmax;
+        -webkit-filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.714));
+        filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
+        z-index: 5;
       }
     }
 
@@ -382,38 +360,28 @@ button {
       }
 
       .elem2 {
-        height: 54.5vmax;
+        height: 53.5vmax;
         width: 93%;
         width: calc(100% - 4.6vmax);
 
-        img {
-          height: 42vmax;
-          margin-top: 0;
-          margin-left: 6vmax;
-        }
-
         .textbox1 {
-          left: 7%;
-
           h1 {
             font-size: 15vmax;
             line-height: 14vmax;
           }
         }
 
-        .textbox2 {
-          top: 13%;
-          left: 73%;
-          width: 25%;
+        .nikelogo2 {
+          height: 25vmax;
+          position: absolute;
+          top: 38%;
+          left: 64%;
+          transform: translate(-50%, -50%);
+        }
 
-          h1 {
-            font-size: 4vmax;
-            line-height: 2.5vmax;
-
-            &:nth-child(1) {
-              font-size: 5vmax;
-            }
-          }
+        .jordanshoe {
+          height: 41vmax;
+          left: 60%;
         }
       }
 
@@ -439,18 +407,24 @@ button {
       padding-top: 6vmax;
 
       .elem2 {
-        height: 41.3vmax;
+        height: 40.5vmax;
 
-        img {
+        .nikelogo2 {
+          height: 25vmax;
+          position: absolute;
+          top: 30%;
+          left: 55%;
+          transform: translate(-50%, -50%) rotate(-20deg);
+        }
+
+        .jordanshoe {
           height: 40vmax;
-          margin-left: 4vmax;
+          top: 49%;
+          left: 51%;
+          transform: translate(-50%, -50%) rotate(10deg);
         }
 
         .textbox1 {
-          display: none;
-        }
-
-        .textbox2 {
           display: none;
         }
       }
@@ -546,10 +520,6 @@ button {
       .slider {
         .imgbox {
           width: calc(100% / 1.2);
-
-          &:nth-child(2) img {
-            object-position: -5vmax center;
-          }
         }
       }
     }
@@ -565,11 +535,11 @@ button {
       width: 100%;
       margin-top: 3vmax;
 
-      img {
+      video {
         height: 100%;
         width: 100%;
         object-fit: cover;
-        object-position: top;
+        object-position: center;
       }
     }
 
@@ -648,7 +618,8 @@ button {
     }
   }
 
-  .sec4 {
+  .sec4,
+  .sec6 {
     height: fit-content;
     width: 100%;
     padding: 3vmax;
@@ -672,7 +643,7 @@ button {
           height: 20vmax;
           width: 100%;
           object-fit: cover;
-          object-position: center -7vmax;
+          object-position: center;
         }
 
         h4 {
@@ -683,7 +654,8 @@ button {
   }
 
   @media (max-width: 30cm) {
-    .sec4 {
+    .sec4,
+    .sec6 {
       padding: 4.6vmax 2.3vmax;
 
       .slider {
@@ -696,8 +668,8 @@ button {
           width: calc(100% / 1.3);
 
           img {
-            height: 40vmax;
-            object-position: center -7vmax;
+            height: 30vmax;
+            object-position: center;
           }
 
           h4 {
@@ -709,14 +681,11 @@ button {
   }
 
   @media (max-width: 15cm) {
-    .sec4 {
+    .sec4,
+    .sec6 {
       .slider {
         .imgbox {
           width: calc(100% / 1.2);
-
-          img {
-            height: 25vmax;
-          }
         }
       }
     }
@@ -731,13 +700,12 @@ button {
       height: 50vmax;
       width: 100%;
       margin-top: 3vmax;
-      background: #fcfcfc;
 
-      img {
+      video {
         height: 100%;
         width: 100%;
-        object-fit: contain;
-        object-position: center 0.5vmax;
+        object-fit: cover;
+        object-position: center;
       }
     }
 

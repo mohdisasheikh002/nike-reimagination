@@ -232,31 +232,19 @@ button {
   position: relative;
   height: calc(100vh - 7vmax);
   width: 94%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   background-color: #184087;
   background-image: linear-gradient(to right, #153b7b, #0d2754, #041433, #041535, #041535);
   overflow: hidden;
 }
-.wrapper .sec1 .elem2 img {
-  height: 46vmax;
-  transform: rotate(22deg);
-  margin-top: 2vmax;
-  margin-left: 3vmax;
-  filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
-  z-index: 88;
-}
 .wrapper .sec1 .elem2 .textbox1 {
   position: absolute;
-  top: 51%;
-  left: 11%;
-  transform: translate(0%, -50%);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 .wrapper .sec1 .elem2 .textbox1 h1 {
   font-size: 18vmax;
   font-family: nikeFutura;
-  font-style: italic;
   letter-spacing: 0.5vmax;
   line-height: 16vmax;
   color: white;
@@ -265,29 +253,21 @@ button {
 .wrapper .sec1 .elem2 .textbox1 h1:nth-child(1) {
   margin-left: 0.1vmax;
 }
-.wrapper .sec1 .elem2 .textbox2 {
+.wrapper .sec1 .elem2 .nikelogo2 {
+  height: 33vmax;
   position: absolute;
-  top: 16%;
-  left: 70%;
-  width: 25%;
-  text-align: center;
-  transform: rotate(-20deg);
+  top: 32%;
+  left: 63%;
+  transform: translate(-50%, -50%);
 }
-.wrapper .sec1 .elem2 .textbox2 h1 {
-  font-size: 5vmax;
-  line-height: 3vmax;
-  font-family: nikeFutura;
-  color: transparent;
-  -webkit-text-stroke: 1px #fff;
-}
-.wrapper .sec1 .elem2 .textbox2 h1:nth-child(1) {
+.wrapper .sec1 .elem2 .jordanshoe {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 6vmax;
-  font-family: nikeFutura;
-  color: white;
+  left: 56.8%;
+  transform: translate(-50%, -50%) rotate(25deg);
+  height: 46vmax;
+  filter: drop-shadow(20px 20px 8px rgba(0, 0, 0, 0.714));
+  z-index: 5;
 }
 .wrapper .sec1 .elem3 {
   height: -moz-fit-content;
@@ -334,33 +314,24 @@ button {
     padding: 0 1vmax;
   }
   .wrapper .sec1 .elem2 {
-    height: 54.5vmax;
+    height: 53.5vmax;
     width: 93%;
     width: calc(100% - 4.6vmax);
-  }
-  .wrapper .sec1 .elem2 img {
-    height: 42vmax;
-    margin-top: 0;
-    margin-left: 6vmax;
-  }
-  .wrapper .sec1 .elem2 .textbox1 {
-    left: 7%;
   }
   .wrapper .sec1 .elem2 .textbox1 h1 {
     font-size: 15vmax;
     line-height: 14vmax;
   }
-  .wrapper .sec1 .elem2 .textbox2 {
-    top: 13%;
-    left: 73%;
-    width: 25%;
+  .wrapper .sec1 .elem2 .nikelogo2 {
+    height: 25vmax;
+    position: absolute;
+    top: 38%;
+    left: 64%;
+    transform: translate(-50%, -50%);
   }
-  .wrapper .sec1 .elem2 .textbox2 h1 {
-    font-size: 4vmax;
-    line-height: 2.5vmax;
-  }
-  .wrapper .sec1 .elem2 .textbox2 h1:nth-child(1) {
-    font-size: 5vmax;
+  .wrapper .sec1 .elem2 .jordanshoe {
+    height: 41vmax;
+    left: 60%;
   }
   .wrapper .sec1 .elem3 {
     padding: 2.3vmax;
@@ -380,16 +351,22 @@ button {
     padding-top: 6vmax;
   }
   .wrapper .sec1 .elem2 {
-    height: 41.3vmax;
+    height: 40.5vmax;
   }
-  .wrapper .sec1 .elem2 img {
+  .wrapper .sec1 .elem2 .nikelogo2 {
+    height: 25vmax;
+    position: absolute;
+    top: 30%;
+    left: 55%;
+    transform: translate(-50%, -50%) rotate(-20deg);
+  }
+  .wrapper .sec1 .elem2 .jordanshoe {
     height: 40vmax;
-    margin-left: 4vmax;
+    top: 49%;
+    left: 51%;
+    transform: translate(-50%, -50%) rotate(10deg);
   }
   .wrapper .sec1 .elem2 .textbox1 {
-    display: none;
-  }
-  .wrapper .sec1 .elem2 .textbox2 {
     display: none;
   }
   .wrapper .sec1 .elem3 {
@@ -471,10 +448,6 @@ button {
   .wrapper .sec2 .slider .imgbox {
     width: 83.3333333333%;
   }
-  .wrapper .sec2 .slider .imgbox:nth-child(2) img {
-    -o-object-position: -5vmax center;
-       object-position: -5vmax center;
-  }
 }
 .wrapper .sec3 {
   height: -moz-fit-content;
@@ -487,13 +460,13 @@ button {
   width: 100%;
   margin-top: 3vmax;
 }
-.wrapper .sec3 .elem1 img {
+.wrapper .sec3 .elem1 video {
   height: 100%;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: top;
-     object-position: top;
+  -o-object-position: center;
+     object-position: center;
 }
 .wrapper .sec3 .elem2 {
   height: -moz-fit-content;
@@ -554,13 +527,15 @@ button {
     margin-top: 3.5vmax;
   }
 }
-.wrapper .sec4 {
+.wrapper .sec4,
+.wrapper .sec6 {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
   padding: 3vmax;
 }
-.wrapper .sec4 .slider {
+.wrapper .sec4 .slider,
+.wrapper .sec6 .slider {
   height: -moz-fit-content;
   height: fit-content;
   width: 100%;
@@ -568,53 +543,60 @@ button {
   gap: 0.8vmax;
   margin-top: 3vmax;
 }
-.wrapper .sec4 .slider::-webkit-scrollbar {
+.wrapper .sec4 .slider::-webkit-scrollbar,
+.wrapper .sec6 .slider::-webkit-scrollbar {
   display: none;
 }
-.wrapper .sec4 .slider .imgbox {
+.wrapper .sec4 .slider .imgbox,
+.wrapper .sec6 .slider .imgbox {
   height: -moz-fit-content;
   height: fit-content;
   width: 33.3333333333%;
 }
-.wrapper .sec4 .slider .imgbox img {
+.wrapper .sec4 .slider .imgbox img,
+.wrapper .sec6 .slider .imgbox img {
   height: 20vmax;
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: center -7vmax;
-     object-position: center -7vmax;
+  -o-object-position: center;
+     object-position: center;
 }
-.wrapper .sec4 .slider .imgbox h4 {
+.wrapper .sec4 .slider .imgbox h4,
+.wrapper .sec6 .slider .imgbox h4 {
   margin-top: 3vmax;
 }
 @media (max-width: 30cm) {
-  .wrapper .sec4 {
+  .wrapper .sec4,
+  .wrapper .sec6 {
     padding: 4.6vmax 2.3vmax;
   }
-  .wrapper .sec4 .slider {
+  .wrapper .sec4 .slider,
+  .wrapper .sec6 .slider {
     gap: 1.2vmax;
     overflow-x: auto;
     overflow-y: hidden;
   }
-  .wrapper .sec4 .slider .imgbox {
+  .wrapper .sec4 .slider .imgbox,
+  .wrapper .sec6 .slider .imgbox {
     flex-shrink: 0;
     width: 76.9230769231%;
   }
-  .wrapper .sec4 .slider .imgbox img {
-    height: 40vmax;
-    -o-object-position: center -7vmax;
-       object-position: center -7vmax;
+  .wrapper .sec4 .slider .imgbox img,
+  .wrapper .sec6 .slider .imgbox img {
+    height: 30vmax;
+    -o-object-position: center;
+       object-position: center;
   }
-  .wrapper .sec4 .slider .imgbox h4 {
+  .wrapper .sec4 .slider .imgbox h4,
+  .wrapper .sec6 .slider .imgbox h4 {
     margin-top: 2.3vmax;
   }
 }
 @media (max-width: 15cm) {
-  .wrapper .sec4 .slider .imgbox {
+  .wrapper .sec4 .slider .imgbox,
+  .wrapper .sec6 .slider .imgbox {
     width: 83.3333333333%;
-  }
-  .wrapper .sec4 .slider .imgbox img {
-    height: 25vmax;
   }
 }
 .wrapper .sec5 {
@@ -627,15 +609,14 @@ button {
   height: 50vmax;
   width: 100%;
   margin-top: 3vmax;
-  background: #fcfcfc;
 }
-.wrapper .sec5 .elem1 img {
+.wrapper .sec5 .elem1 video {
   height: 100%;
   width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center 0.5vmax;
-     object-position: center 0.5vmax;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 .wrapper .sec5 .elem2 {
   height: -moz-fit-content;
