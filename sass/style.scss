@@ -38,6 +38,7 @@ html,
 body {
   height: 100%;
   width: 100%;
+  cursor: default;
 }
 
 .fs1 {
@@ -86,6 +87,7 @@ body {
 i {
   font-size: 1.2vmax;
   color: #111;
+  cursor: pointer;
 }
 
 button {
@@ -121,7 +123,6 @@ button {
 
   i {
     font-size: 2.5vmax;
-    color: #111;
   }
 
   button {
@@ -146,6 +147,7 @@ button {
 
   img {
     height: 3vmax;
+    cursor: pointer;
   }
 
   .navcntr {
@@ -904,6 +906,7 @@ button {
     height: fit-content;
     width: 100%;
     padding: 3vmax;
+    padding-bottom: 6vmax;
     // padding: 4.6vmax 2.3vmax;
 
     .row {
@@ -955,22 +958,6 @@ button {
           }
         }
 
-        .counterbox {
-          height: fit-content;
-          width: fit-content;
-          text-align: center;
-
-          h1 {
-            font-family: neueBold;
-          }
-
-          h5 {
-            text-transform: uppercase;
-            margin-top: 0.5vmax;
-            margin-left: 0.2vmax;
-          }
-        }
-
         .linkbox {
           height: fit-content;
           width: fit-content;
@@ -985,6 +972,21 @@ button {
             color: #111;
           }
         }
+
+        .counterbox {
+          height: fit-content;
+          width: fit-content;
+          text-align: center;
+
+          h1 {
+            font-family: neueBold;
+          }
+
+          h5 {
+            text-transform: uppercase;
+            margin-top: 0.5vmax;
+          }
+        }
       }
     }
   }
@@ -994,6 +996,7 @@ button {
       height: fit-content;
       width: 100%;
       padding: 4.6vmax 2.3vmax;
+      padding-bottom: 9.2vmax;
 
       .row {
         flex-direction: column;
@@ -1009,7 +1012,7 @@ button {
           width: 100%;
           background-color: #fff;
           padding: 0;
-          gap: 5vmax;
+          gap: 4vmax;
           margin-top: 2.3vmax;
 
           .contentbox {
@@ -1047,7 +1050,7 @@ button {
               line-height: 3vmax;
               margin-top: 2.5vmax;
               padding: 0;
-              padding-right: 10vmax;
+              padding-right: 20vmax;
             }
 
             .button {
@@ -1055,15 +1058,206 @@ button {
             }
           }
 
-          .counterbox {
-            text-align: left;
-            width: 100%;
-          }
-
           .linkbox {
             flex-wrap: wrap;
           }
+
+          .counterbox {
+            text-align: left;
+            width: 100%;
+
+            h5 {
+              margin-left: 0.1vmax;
+            }
+          }
         }
+      }
+    }
+  }
+
+  .footer {
+    height: fit-content;
+    width: 100%;
+    background-color: #111;
+    padding: 2.5vmax 3vmax;
+    padding-top: 6vmax;
+
+    .elem1 {
+      height: fit-content;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      .lbholder {
+        position: relative;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        gap: 12vmax;
+
+        .linkbox {
+          height: fit-content;
+          width: fit-content;
+          display: flex;
+          flex-direction: column;
+          gap: 1.2vmax;
+
+          .fs5 {
+            font-family: nikeTg;
+            letter-spacing: 0.025vmax;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+          }
+
+          .fs6 {
+            font-family: neueRegular;
+            text-decoration: none;
+            text-transform: capitalize;
+            color: #fff;
+            opacity: 0.5;
+            transition: all 0.25s linear;
+
+            &:hover {
+              opacity: 1;
+              transition: all 0.25s linear;
+            }
+          }
+        }
+      }
+
+      .sociallinkbox {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        gap: 1vmax;
+
+        i {
+          padding: 0.5vmax;
+          border-radius: 5vmax;
+          background-color: #fff;
+          opacity: 0.5;
+          color: #111;
+          cursor: pointer;
+          transition: all 0.25s linear;
+
+          &:hover {
+            opacity: 1;
+            transition: all 0.25s linear;
+          }
+        }
+      }
+    }
+
+    .elem2 {
+      height: 1vmax;
+      width: 100%;
+      margin-top: 6vmax;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+
+      .infolinkbox {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        align-items: flex-end;
+
+        i {
+          margin-left: -0.3vmax;
+          color: #fff;
+        }
+
+        a {
+          font-family: neueMedium;
+          text-decoration: none;
+          color: #fff;
+          padding-left: 0.3vmax;
+        }
+
+        p {
+          color: #fff;
+          text-transform: capitalize;
+          opacity: 0.5;
+          margin-left: 2vmax;
+        }
+      }
+
+      .linkbox {
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        gap: 2vmax;
+
+        a {
+          font-family: neueRegular;
+          text-decoration: none;
+          color: #fff;
+          opacity: 0.5;
+          transition: all 0.25s linear;
+
+          &:hover {
+            opacity: 1;
+            transition: all 0.25s linear;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 30cm) {
+    .footer {
+      padding: 2.3vmax 2.3vmax;
+      padding-top: 9.2vmax;
+
+      .elem1 {
+        flex-direction: column;
+
+        .lbholder {
+          width: 100%;
+          gap: 10vmax;
+        }
+
+        .sociallinkbox {
+          margin-top: 5vmax;
+
+          i {
+            padding: 1vmax;
+          }
+        }
+      }
+
+      .elem2 {
+        height: fit-content;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-end;
+        gap: 2.3vmax;
+
+        .infolinkbox {
+          p {
+            margin-left: 2.5vmax;
+          }
+        }
+
+        .linkbox {
+          gap: 2.5vmax;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 15cm) {
+    .footer {
+      .elem1 {
+        .lbholder {
+          gap: 5vmax;
+          flex-direction: column;
+        }
+      }
+
+      .elem2 {
+        margin-top: 5vmax;
       }
     }
   }
