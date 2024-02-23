@@ -14,7 +14,7 @@ gsap.to(counter, {
         clearInterval();
       } else {
         flag += 1;
-        counter.textContent = flag + " " + "+";
+        counter.textContent = flag + " ";
       }
     });
   },

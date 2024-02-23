@@ -220,7 +220,7 @@ button {
   letter-spacing: 0.04vmax;
   font-family: neueMedium;
   text-decoration: none;
-  border-left: 2px solid #111;
+  border-left: 1px solid #111;
   padding: 0 1vmax;
   color: #111;
 }
@@ -523,7 +523,7 @@ button {
     line-height: 3vmax;
     margin-top: 2.5vmax;
     padding: 0;
-    padding-right: 10vmax;
+    padding-right: 12vmax;
   }
   .wrapper .sec3 .elem2 .button {
     margin-top: 3.5vmax;
@@ -682,7 +682,7 @@ button {
     line-height: 3vmax;
     margin-top: 2.5vmax;
     padding: 0;
-    padding-right: 10vmax;
+    padding-right: 11vmax;
   }
   .wrapper .sec5 .elem2 .button {
     margin-top: 3.5vmax;
@@ -904,7 +904,7 @@ button {
     line-height: 3vmax;
     margin-top: 2.5vmax;
     padding: 0;
-    padding-right: 20vmax;
+    padding-right: 21vmax;
   }
   .wrapper .sec7 .row .elem2 .contentbox .button {
     margin-top: 3.5vmax;
@@ -1047,7 +1047,7 @@ button {
 @media (max-width: 30cm) {
   .wrapper .footer {
     padding: 2.3vmax 2.3vmax;
-    padding-top: 9.2vmax;
+    padding-top: 10vmax;
   }
   .wrapper .footer .elem1 {
     flex-direction: column;
