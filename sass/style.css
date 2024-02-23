@@ -152,9 +152,25 @@ button {
   gap: 2.5vmax;
 }
 .nav .navcntr a {
+  position: relative;
   font-family: neueMedium;
   text-decoration: none;
   color: #111;
+}
+.nav .navcntr a::after {
+  content: "";
+  position: absolute;
+  bottom: -20%;
+  left: 0;
+  z-index: 99;
+  height: 1.5px;
+  width: 0%;
+  background-color: #111;
+  transition: 0.25s linear;
+}
+.nav .navcntr a:hover::after {
+  width: 100%;
+  transition: 0.25s linear;
 }
 .nav .navrgt {
   display: flex;

@@ -163,9 +163,27 @@ button {
     gap: 2.5vmax;
 
     a {
+      position: relative;
       font-family: neueMedium;
       text-decoration: none;
       color: #111;
+
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: -20%;
+        left: 0;
+        z-index: 99;
+        height: 1.5px;
+        width: 0%;
+        background-color: #111;
+        transition: 0.25s linear;
+      }
+
+      &:hover::after {
+        width: 100%;
+        transition: 0.25s linear;
+      }
     }
   }
 

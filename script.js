@@ -3,8 +3,8 @@ var counter = document.querySelector(".counter");
 
 gsap.to(counter, {
   scrollTrigger: {
-    trigger: ".sec7",
-    start: "top 0%",
+    trigger: ".counter",
+    start: "top 100%",
   },
   onUpdate: () => {
     let flag = 0;
