@@ -1,0 +1,120 @@
+@font-face {
+  font-family: nikeTg;
+  src: url("../fonts/Nike-TG.otf");
+}
+
+@font-face {
+  font-family: nikeFutura;
+  src: url("../fonts/Nike-Futura.otf");
+}
+
+@font-face {
+  font-family: neueLight;
+  src: url("../fonts/NeueMontreal-Light.otf");
+}
+
+@font-face {
+  font-family: neueRegular;
+  src: url("../fonts/NeueMontreal-Regular.otf");
+}
+
+@font-face {
+  font-family: neueMedium;
+  src: url("../fonts/NeueMontreal-Medium.otf");
+}
+
+@font-face {
+  font-family: neueBold;
+  src: url("../fonts/NeueMontreal-Bold.otf");
+}
+
+.fs1 {
+  font-size: 5vmax;
+  line-height: 4.5vmax;
+  font-family: nikeFutura;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+.fs2 {
+  font-size: 4vmax;
+  font-family: neueRegular;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+.fs3 {
+  font-size: 2vmax;
+  font-family: neueRegular;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+.fs4 {
+  font-size: 1.2vmax;
+  font-family: neueRegular;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+.fs5 {
+  font-size: 1vmax;
+  font-family: neueRegular;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+.fs6 {
+  font-size: 0.8vmax;
+  font-family: neueRegular;
+  color: #111;
+  letter-spacing: 0.05vmax;
+}
+
+i {
+  font-size: 1.2vmax;
+  color: #111;
+  cursor: pointer;
+}
+
+button {
+  font-size: 1vmax;
+  font-family: neueRegular;
+  letter-spacing: 0.05vmax;
+  border-radius: 5vmax;
+  border: none;
+  color: #fff;
+  background-color: #111;
+  padding: 0.8vmax 1.8vmax;
+  cursor: pointer;
+}
+
+@media (max-width: 30cm) {
+  .fs1 {
+    font-size: 5.5vmax;
+    line-height: 5.5vmax;
+  }
+
+  .fs3 {
+    font-size: 2.5vmax;
+  }
+
+  .fs4,
+  .fs5 {
+    font-size: 2vmax;
+  }
+
+  .fs6 {
+    font-size: 1.4vmax;
+  }
+
+  i {
+    font-size: 2.5vmax;
+  }
+
+  button {
+    font-size: 2vmax;
+    letter-spacing: 0.1vmax;
+    padding: 1.4vmax 2.8vmax;
+  }
+}
